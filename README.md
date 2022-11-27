@@ -9,6 +9,7 @@ Currently Loaded Modules:
 Step-by-step of install and analysis
 
 1. git clone this repository
+
 git clone https://github.com/UBGBC/minion_metagenomics.git
 
 2. Activate the python anaconda environment
