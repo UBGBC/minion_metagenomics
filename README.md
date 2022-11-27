@@ -8,19 +8,19 @@ Currently Loaded Modules:
 
 Step-by-step of install and analysis
 
-git clone this repository
+1. git clone this repository
 git clone https://github.com/UBGBC/minion_metagenomics.git
 
-Activate the python anaconda environment
+2. Activate the python anaconda environment
 conda activate snakemake
 
-Edit the config.json file and cluster.json files
+3. Edit the config.json file and cluster.json files
 
-Ensure meta-data table contains all of the necessairy fields
+4. Ensure meta-data table contains all of the necessairy fields
 
 ** NOTE EXACT HEADERS HAVE TO BE ENFORCED or key errors will be thrown during processing**
 
-Launch jobs
+5. Launch jobs
 The use of --latency-wait allows for SLURM to catch up writing the files and posting the file handles so Snakemake can see them.
 
 `snakemake --latency-wait 120 -p -j 100 --profile slurm`
